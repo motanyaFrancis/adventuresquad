@@ -1,12 +1,13 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebook, FaInstagram, FaYoutube, FaTiktok   } from 'react-icons/fa';
+import { FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
         <footer className="bg-white text-gray-500 pb-52 py-14 relative">
             {/* Fixed background image at the bottom of the footer */}
-            <img
+            <Image
                 src="/Silhouette.png"
                 alt="Silhouette Background"
                 className="absolute bottom-0 inset-x-0 w-full h-72 object-cover opacity-100 z-0"

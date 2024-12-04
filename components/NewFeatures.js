@@ -1,5 +1,4 @@
-import React from 'react';
-import { FaChartBar, FaShieldAlt, FaCloud, FaPenNib, FaBolt } from 'react-icons/fa';
+import { FaBolt, FaChartBar, FaCloud, FaPenNib, FaShieldAlt } from 'react-icons/fa';
 import { FaTruckFast } from 'react-icons/fa6';
 
 const features = [

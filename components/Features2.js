@@ -1,5 +1,5 @@
 
-import { FaCode, FaBullhorn, FaPen } from 'react-icons/fa';
+import { FaBullhorn, FaCode, FaPen } from 'react-icons/fa';
 
 const features = [
     {
