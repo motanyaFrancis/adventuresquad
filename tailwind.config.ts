@@ -5,6 +5,8 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './node_modules/@headlessui/react/**/*.js', 
+    './node_modules/@heroicons/react/**/*.js',
   ],
   theme: {
     extend: {
