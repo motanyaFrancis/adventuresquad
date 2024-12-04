@@ -1,6 +1,5 @@
 'use client'
 
-import { useState, useEffect  } from 'react'
 import {
   Dialog,
   DialogPanel,
@@ -11,7 +10,8 @@ import {
   PopoverButton,
   PopoverGroup,
   PopoverPanel,
-} from '@headlessui/react'
+} from '@headlessui/react';
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -20,8 +20,9 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+} from '@heroicons/react/24/outline';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -62,9 +63,9 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
+            <Image
               alt=""
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=orange&shade=600"
+              src="https://tailwindui.com/plus/Image/logos/mark.svg?color=orange&shade=600"
               className="h-8 w-auto"
             />
           </a>
@@ -146,9 +147,9 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
+              <Image
                 alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=orange&shade=600"
+                src="https://tailwindui.com/plus/Image/logos/mark.svg?color=orange&shade=600"
                 className="h-8 w-auto"
               />
             </a>
