@@ -7,7 +7,7 @@ const CTASection = () => {
             <div className="container mx-auto px-6 relative z-10 flex items-center h-full">
                 <div className="flex w-full md:w-1/2 flex-col text-white ml-auto">
                     <h2 className="text-5xl font-bold leading-tight mb-20">
-                        Let's <span className="text-orange-500 ">Explore</span> the world With Adventure Squad
+                        Let`&apos;`s <span className="text-orange-500 ">Explore</span> the world With Adventure Squad
                     </h2>
                     <div className="flex  mb-10">
                         {/* Safari Section */}
