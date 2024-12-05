@@ -7,12 +7,12 @@ const SearchBar = () => {
     const [location, setLocation] = useState('');
     const [checkin, setCheckin] = useState('');
     const [checkout, setCheckout] = useState('');
-    const [guests, setGuests] = useState(1);
+    // const [guests, setGuests] = useState(1);
     const [selectedTab, setSelectedTab] = useState('hotel'); // Default tab is 'hotel'
     const [isRoundTrip, setIsRoundTrip] = useState(false); // Round trip checkbox state
 
-    const [formattedCheckin, setFormattedCheckin] = useState('');
-    const [formattedCheckout, setFormattedCheckout] = useState('');
+    // const [formattedCheckin, setFormattedCheckin] = useState('');
+    // const [formattedCheckout, setFormattedCheckout] = useState('');
 
     // Client-side effect to format dates after the component mounts
     useEffect(() => {
@@ -31,13 +31,13 @@ const SearchBar = () => {
         });
     };
 
-    const handleReset = () => {
-        setLocation('');
-        setCheckin('');
-        setCheckout('');
-        setGuests(1);
-        setIsRoundTrip(false);
-    };
+    // const handleReset = () => {
+    //     setLocation('');
+    //     setCheckin('');
+    //     setCheckout('');
+    //     setGuests(1);
+    //     setIsRoundTrip(false);
+    // };
 
     const tabConfig = {
         hotel: [

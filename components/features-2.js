@@ -1,4 +1,4 @@
-
+import Link from 'next/link';  // Import Link component from next/link
 import { FaBullhorn, FaCode, FaPen } from 'react-icons/fa';
 
 const features = [
@@ -56,43 +56,39 @@ export default function Features2() {
                 </div>
 
                 <div className="grid max-w-md gap-8 row-gap-10 sm:mx-auto lg:max-w-full lg:grid-cols-3">
-                    {features.map((feature, index) => {
-                        // Dynamically select the icon from react-icons based on the string value in the 'icon' field
-                        // const Icon = require('react-icons/fa')[feature.icon];
-
-                        return (
-                            <div key={index} className="flex flex-col sm:flex-row">
-                                <div className="sm:mr-4">
-                                    <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-orange-50">
-                                        <feature.icon className="w-12 h-12 text-orange-400" /> {/* Apply styling here */}
-                                    </div>
-                                </div>
-                                <div>
-                                    <h6 className="mb-2 font-semibold text-gray-800 leading-5">{feature.title}</h6>
-                                    <p className="mb-3 text-sm text-gray-900">{feature.description}</p>
-                                    <ul className="mb-4 -ml-1 space-y-2">
-                                        {feature.items.map((item, idx) => (
-                                            <li key={idx} className="flex items-start text-gray-500">
-                                                <span className="mr-1">
-                                                    <svg className="w-5 h-5 mt-px text-orange-400" stroke="currentColor" viewBox="0 0 52 52">
-                                                        <polygon strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                                    </svg>
-                                                </span>
-                                                {item}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                    <a
-                                        href="/"
-                                        aria-label="Learn more"
-                                        className="inline-flex items-center font-semibold transition-colors duration-200 text-orange-400 hover:text-orange-600"
-                                    >
-                                        Learn more
-                                    </a>
+                    {features.map((feature, index) => (
+                        <div key={index} className="flex flex-col sm:flex-row">
+                            <div className="sm:mr-4">
+                                <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-orange-50">
+                                    <feature.icon className="w-12 h-12 text-orange-400" />
                                 </div>
                             </div>
-                        );
-                    })}
+                            <div>
+                                <h6 className="mb-2 font-semibold text-gray-800 leading-5">{feature.title}</h6>
+                                <p className="mb-3 text-sm text-gray-900">{feature.description}</p>
+                                <ul className="mb-4 -ml-1 space-y-2">
+                                    {feature.items.map((item, idx) => (
+                                        <li key={idx} className="flex items-start text-gray-500">
+                                            <span className="mr-1">
+                                                <svg className="w-5 h-5 mt-px text-orange-400" stroke="currentColor" viewBox="0 0 52 52">
+                                                    <polygon strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                                </svg>
+                                            </span>
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                                {/* Replace the <a> tag with the <Link> component */}
+                                <Link
+                                    href="/"  // Link to the root ("/") or any other page
+                                    aria-label="Learn more"
+                                    className="inline-flex items-center font-semibold transition-colors duration-200 text-orange-400 hover:text-orange-600"
+                                >
+                                    Learn more
+                                </Link>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
